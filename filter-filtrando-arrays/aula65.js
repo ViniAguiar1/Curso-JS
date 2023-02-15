@@ -11,9 +11,11 @@ const numeros = [5, 50, 80, 1, 2, 3, 5, 8, 7, 11,
     // }; 
 
     const numerosFiltrados = numeros.filter(function(valor){
+            // console.log(valor, indice, array);
         return valor > 10;
     });
-    console.log(numerosFiltrados);
+    // console.log(numerosFiltrados);
+
 
     // retorne as pessoas que tem o nome com 5 letras ou mais
     // retorne as pessoas com mais de 50 anos
@@ -25,4 +27,12 @@ const numeros = [5, 50, 80, 1, 2, 3, 5, 8, 7, 11,
         { nome: "felipe", idade: 15},
         { nome: 'raquel', idade: 40},
         { nome: "aldenor", idade: 60},
+        { nome: "piu", idade: 72},
+        { nome: 'ana', idade: 55},
     ];
+const pessoas5Letra = pessoas.filter(function(obj){
+    return obj.nome.length >= 5;
+    // length verifica o tamanho da string
+     // console.log(obj.nome);
+});
+console.log(pessoas5Letra);
