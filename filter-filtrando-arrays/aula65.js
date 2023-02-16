@@ -35,4 +35,11 @@ const pessoas5Letra = pessoas.filter(function(obj){
     // length verifica o tamanho da string
      // console.log(obj.nome);
 });
-console.log(pessoas5Letra);
+const pessoas50anos = pessoas.filter(function(obj){
+    return obj.idade > 50;
+})
+
+const pessoasFimComA = pessoas.filter(function(obj){
+    return obj.nome.toLowerCase().endsWith('a');
+})
+console.log(pessoasFimComA);
