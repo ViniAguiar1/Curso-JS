@@ -22,7 +22,14 @@ const apenasONome = pessoas.map(function(obj){
     return obj.nome
 });
 // console.log(apenasONome);
-const chaveSemNome = pessoas.map(function(indice){
-    return indice.pessoas - nome;
+const chaveSemNome = pessoas.map(function(obj){
+    delete obj.nome;
+    return obj;
 });
-console.log(chaveSemNome);
+// console.log(chaveSemNome);
+const chaveId = pessoas.map(function(obj, indice){
+    obj.id = indice;
+    return obj;
+});
+
+console.log(chaveId);
