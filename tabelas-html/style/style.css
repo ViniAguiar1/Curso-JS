@@ -1,0 +1,25 @@
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td, table th{
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: left;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+table caption{
+    caption-side: bottom;
+    text-align: right;
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+ tfoot td {
+    background: #ddd;
+ }
