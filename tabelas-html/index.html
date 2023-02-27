@@ -9,7 +9,7 @@
 </head>
 <body>
     <p>Lorem, ipsum dolor sit.</p>
-
+<div class="responsive-table">
     <table>
         <caption>Uma descrição para tabela</caption>
         <thead>
@@ -27,8 +27,8 @@
                 <td>Corpo 3</td>
             </tr>
             <tr>
-                <td rolspan="2">Corpo 1</td>
-                <td>Corpo 2</td>
+                <td colspan="2">Corpo 1</td>
+                <td>Corpo 3</td>
             </tr>
             <tr>
                 <td>Corpo 1</td>
@@ -39,11 +39,13 @@
 
         <tfoot>
             <tr>
-                <td>Tfoot 1</td>
-                <td>Tfoot 2</td>
-                <td>Tfoot 3</td>
+       <td  colspan="2" rowspan="2"></td>
+                <td rowspan="2">TOTAL: R$555</td>
+            </tr>
+            <tr>
             </tr>
         </tfoot>
     </table>
+</div>
 </body>
 </html>
